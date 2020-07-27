@@ -12,6 +12,7 @@ i {
 	color: #D5D700;
 	padding: 5px;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 .next:hover {
 	background: #D5D700;
@@ -60,8 +61,7 @@ i {
 	background: #2727e6;
 	color: #fff;
 	height: 100vh;
-	padding: 20px;
-	width: 100%;
+	padding: 50px;
 }
 
 /* Photo perso*/
@@ -77,15 +77,17 @@ i {
 	height: 50%;
 }
 
+@media (max-width: 768px) {
+	#header {
+		padding: 10px;
+	}
+}
+
 /*Info personnelles*/
 .info-personnels {
 	flex: 0.8;
 }
-.info-personnels p{
-	position: relative;
-	top: 25%;
-	left: 0%;
-}
+
 .info-personnels p span{
 	display: block;
 	margin-top: 5px;
@@ -119,19 +121,35 @@ i {
 }
 
 @media (max-width: 768px) {
+
 	#header {
 		flex-direction: column-reverse;
 		height: 150vh;
+		padding: 10px;
+	}
+
+	.info-personnels{
+		flex: 1;
 	}
 
 	.info-personnels p {
+		padding: 10px;
 		left: 0px;
 		top: 4%;
 	}
 
 	.photo {
 		height: 100%;
+		width: 100%;
 		margin: auto;
+		padding: 50px;
+	}
+
+	.photo img {
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		left: 0%;
 	}
 
 	.contact {
@@ -141,14 +159,14 @@ i {
 
 #cv {
 	height: 135vh;
-	background: #2727e6;
+	background: #000;
 	z-index: 9998;
+	padding: 20px;
 }
 .entetes {
 	display: flex;
 	justify-content: space-between;
 	background: #D5D700;
-	border-top: 1px solid #D5D700;
 	border-left: 1px solid #D5D700;
 }
 .entete-element {
@@ -175,8 +193,6 @@ i {
 	border-radius: 10px;
 }
 
-
-
 .cv-content {
 	height: 92vh;
 	border-left: 1px solid #D5D700;
@@ -195,7 +211,7 @@ i {
 	}
 
 	#cv {
-		height: 135vh;
+		height: 150vh;
 		overflow-x: hidden;
 	}
 }
@@ -516,6 +532,7 @@ i {
 #main {
 	position: relative;
 	top: -1000px;
+	z-index: 9997;
 }
 
 @media (max-width: 768px) {
@@ -538,7 +555,7 @@ i {
 	}
 
 	.line {
-		top: -200px;
+		top: -180px;
 	}
 
 	.flex-main-element p {
