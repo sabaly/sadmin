@@ -283,6 +283,17 @@ i {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+	.portfolio .portfolio-item figure {
+		height: 120px;
+	}
+
+	.portfolio-info {
+		margin-top: 10px;
+		color: #f00;
+	}
+}
+
 .portfolio .portfolio-item figure:hover img {
   opacity: 0.4;
   transition: .4s;
@@ -331,6 +342,8 @@ i {
 	margin-top: 15px;
 	padding: 5px;
 }
+
+
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
@@ -489,6 +502,7 @@ i {
 
 	#formations figure img {
 		top: 0%;
+		left: 0%;
 	}
 
 	.ecoles *{
