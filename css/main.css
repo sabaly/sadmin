@@ -538,6 +538,16 @@ i {
 	color: #2727e6;
 }
 
+@media(max-width: 768px) {
+	.flex-main-element  *{
+		text-align: justify;
+	}
+
+	.flex-main-element figure {
+		text-align: center;
+	}
+}
+
 #main figure img{
 	height: 50%;
 	position: relative;
@@ -565,7 +575,7 @@ i {
 
 	.onMobile {
 		flex-direction: column-reverse;
-		margin: 50px;
+		/*margin: 50px;*/
 	}
 
 	.line {
